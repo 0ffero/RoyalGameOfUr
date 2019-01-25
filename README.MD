@@ -14,7 +14,7 @@ More info can be found on the wiki (https://en.wikipedia.org/wiki/Royal_Game_of_
 There are 2 players. Each player gets to throw 4, 4 sided dice.
 
 Each player has 7 counters which have to travel the board until it exists the board (on the right hand side).
-There are 3 lanes, 2 of which interact with each other.
+There are 3 lanes, of which players interact with each other in the middle lane (the attack lane).
 
 <pre>
 [1][1][1][1]S    E[1][1]  <-- Player 1s entry and exit lane
