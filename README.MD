@@ -4,8 +4,9 @@ So, heres my implementation of The Royal Game of Ur.
 
 <b>Dev and implementation</b>: Originally built for Firefox, but the animation system isnt as smooth "looking" as it is in
 Chrome. So, it will probably still work OK in firefox, but the pieces positions will be off a bit as .width and .height will
-include or not include its margin and/or padding sizes. This'll probably never be fixed as I only planned for me to prove
-to myself that I could build it :)
+include or not include its margin and/or padding sizes. This'll probably never be fixed as I only planned for me to play it,
+and Ill always just play it in Chrome :)
+
 <b>Outcome</b>: Index.html and indexsound.html. No external images or sounds (as I base64 encoded them all). Uses Jquery.
 
 More info can be found on the wiki (https://en.wikipedia.org/wiki/Royal_Game_of_Ur): but heres a quick overview of the rules
