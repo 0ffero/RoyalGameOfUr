@@ -42,10 +42,10 @@ They then move up the attack lane. At this point players can take other player's
 position when "taken".
 
 If a counter reaches the exit lane on the right it cannot be taken and is theoretically safe. Side note: "theoretically": although
-it cannot be taken, you will have to throw a specific number to move the dice off the board i.e if the player is on the 1st of the
-2 exit quares they MUST throw either a 1 to move it to the last sqaure, or a 2 to allow it to exit the board. If neither of these
-are thrown then player loses their shot until they can move. This also happens at other points in the game. Make sure you always
-have enough space to move or you'll lose your turn ;)
+it cannot be taken, you will have to throw a specific number to move the counter off the board i.e if the player is on the 1st of
+the 2 exit quares they MUST throw either a 1 to move it to the last sqaure, or a 2 to allow it to exit the board. If neither of
+these are thrown then player loses their shot until they can move. This also happens at other points in the game. Make sure you
+always have enough space to move or you'll lose your turn ;)
 
 Special Squares: The sqaure that looks like the red and black pettles are free shot squares i.e. you get to roll the dice again.
 Also, counters on the pettle in the attack lane cannot be taken, so if someones on it, you cannot take that square.
