@@ -47,8 +47,9 @@ the 2 exit quares they MUST throw either a 1 to move it to the last sqaure, or a
 these are thrown then player loses their shot until they can move. This also happens at other points in the game. Make sure you
 always have enough space to move or you'll lose your turn ;)
 
-Special Squares: The sqaure that looks like the red and black petals are free shot squares i.e. you get to roll the dice again.
-Also, counters on the petal in the attack lane cannot be taken, so if someones on it, you cannot take that square.
+Special Squares: The sqaure that looks like the red and black petals are free shot squares i.e. you get to roll the dice again after
+you move to it.
+Also, counters on the petal in the attack lane cannot be taken, so if someone is on it, you cannot take that position.
 
 Only one counter is allowed on each sqaure.
 
