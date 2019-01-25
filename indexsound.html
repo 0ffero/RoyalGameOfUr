@@ -1,0 +1,111 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+<script type="text/javascript" src="js/jquery331.js"></script>
+<script type="text/javascript" src="js/functions.js" ></script>
+<style type="text/css">
+	body { background-color: black; }
+	body, div { font-size: 26px; color: white; font-family: Yanone Kaffeesatz, monospace; }
+	#container, #piecesContainer { margin: 20px auto; margin-bottom: 0px; width: 1640px; background-color: black; padding: 20px; clear: left; height: 650px; }
+	#container { width: 1680px; }
+	#piecesContainer { margin: 0px auto;  border: 5px solid white; height: 350px; }
+	#containerA, #containerB, #attackLane { clear: left; background-color: black; height: 209px; width: 1680px; }
+	#diceContainer { width: 75%; margin: 20px auto; }
+	.position { border: 5px solid black; margin: 0px 0px; float: left; width: 200px; height: 200px; }
+	.empty { border: 5px solid black; background-color: black; }
+
+	.SA4, .SB4, .AT4, .HA2, .HB2 { }
+	.HA1, .HB1 { }
+	.AT3, .AT6 { }
+	.AT1 { }
+	.SA1, .SA3, .SB1, .SB3, .AT7 { }
+	.SA2, .SB2, .AT2, .AT5, .AT8 { }
+	
+	.playerContainer { width: 480px; margin: 10px 10px; padding: 10px; height: 310px; float: left; border: 1px solid white; }
+		.playerContainer:nth-child(1) { background: linear-gradient(#7ac2ff, #00041c); }
+		.playerContainer:nth-child(2) { width: 550px; height: 420px; background: linear-gradient(#f1f450, #d82e2e); }
+		.playerContainer:nth-child(3) { background: linear-gradient(#ed1919, #1c0000); }
+		.playerheader, .diceheader { font-weight: bold; font-size: 38px; width: 100%; text-align: center; margin: 10px 10px; color: white; }
+		.diceheader { color: black !important; text-shadow: 2px 2px 2px white; text-transform: uppercase; }
+		.text_col_a, .text_col_b { text-shadow: 2px 2px 2px #000; }
+		.playerATile, .playerBTile { z-index: 1; }
+		.playerATile, .playerBTile { width: 100px; height: 100px; float: left; margin: 10px; }
+		.dice { width: 150px; height: 150px; float: left; margin: 10px 25px; }
+		.diceOne, .diceTwo, .diceThree, .diceFour { }
+	
+	.clickable { cursor: pointer } 
+	.variables { dsplay: none; }
+	
+	#popup { width: 500px; height: 250px; border: 2px solid black; position: absolute; z-index: 100; margin: 20px 40px; box-shadow: 0px 0px 40px dodgerblue; opacity: 1; text-shadow: 0px 0px 6px black; color: white; background: linear-gradient(#a33fff, #cc0000e8); }
+		.title, .message { margin: 20px 20px; text-align: center; }
+		.title { font-weight: bold; font-size: 40px; }
+		.message { text-align: left; line-height: 120%; }
+		
+	a { color: white }
+	a:hover { color: yellow }
+	
+	audio { display: none; }
+</style>
+</head>
+
+<body>
+<!-- The Royal Game of Ur basic board setup //-->
+<!-- 		SA4 SA3 SA2 SA1 EMP EMP HA2 HA1
+            AT1 AT2 AT3 AT4 AT5 AT6 AT7 AT8
+			SB4 SB3 SB2 SB1 EMP EMP HB2 HB1
+//-->
+<div id="container">
+	<!-- Player A Side //-->
+	<div id="containerA">
+		<div class="position SA4" data-taken="0"></div><div class="position SA3" data-taken="0"></div><div class="position SA2" data-taken="0"></div><div class="position SA1" data-taken="0"></div><div class="position EA1"></div><div class="position FNA" data-taken="0"></div><div class="position HA2" data-taken="0"></div><div class="position HA1" data-taken="0"></div>
+	</div>
+
+	<!-- Center (attack lane) //-->
+	<div id="attackLane">
+		<div class="position AT1" data-taken="0"></div><div class="position AT2" data-taken="0"></div><div class="position AT3" data-taken="0"></div><div class="position AT4" data-taken="0"></div><div class="position AT5" data-taken="0"></div><div class="position AT6" data-taken="0"></div><div class="position AT7" data-taken="0"></div><div class="position AT8" data-taken="0"></div>
+	</div>
+
+
+	<!-- Player B Side //-->
+	<div id="containerB">
+		<div class="position SB4" data-taken="0"></div><div class="position SB3" data-taken="0"></div><div class="position SB2" data-taken="0"></div><div class="position SB1" data-taken="0"></div><div class="position EB1"></div><div class="position FNB" data-taken="0"></div><div class="position HB2" data-taken="0"></div><div class="position HB1" data-taken="0"></div>
+	</div>
+
+</div>
+
+<div id="piecesContainer">
+	<div class="playerContainer playerA">
+		<div class="playerheader text_col_a">PLAYER 1</div>
+	</div>
+	<div class="playerContainer diceContainer">
+		<div class="diceheader">Player 1 throw the dice</div>
+			<div id="diceContainer">
+				<div id = "diceOne" class="dice diceOne clickable" data-state="1"></div>
+				<div id = "diceTwo" class="dice diceTwo clickable" data-state="1"></div>
+				<div id = "diceThree" class="dice diceThree clickable" data-state="1"></div>
+				<div id = "diceFour" class="dice diceFour clickable" data-state="1"></div>
+			</div>
+	</div>
+	<div class="playerContainer playerB">
+		<div class="playerheader text_col_b">PLAYER 2</div>
+	</div>
+</div>
+
+<div id ="popup">
+	<div class="title">WELCOME TO THE<br/>ROYAL GAME OF UR</div>
+	<div class="message">The Royal Game of Ur, also known as the Game of Twenty Squares or simply the Game of Ur, is a two-player strategy race board game that was first played in ancient Mesopotamia during the early third millennium BC. <a href="https://en.wikipedia.org/wiki/Royal_Game_of_Ur" target="_blank">more</a></div>
+</div>
+
+<div id="variables" data-currentplayer="1" data-playeronesquares='' data-playertwosquares='' data-hasdicebeenrolled="0"></div>
+<audio controls id="diceRollSnd" src="" />
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	console.log = function() {}
+	$.getScript("js/boardstuff.js");
+})
+</script>
+</html>
