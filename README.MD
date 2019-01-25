@@ -3,7 +3,7 @@ So, heres my implementation of The Royal Game of Ur.
 <b>Reason</b>: I saw the game on youtube and thought "I bet I can make that in javascript"... so I did.
 <b>Outcome</b>: Index.html and indexsound.html. No external images or sounds. Uses Jquery.
 
-More info can be found on the wiki: but heres a quick overview of the rules
+More info can be found on the wiki (https://en.wikipedia.org/wiki/Royal_Game_of_Ur): but heres a quick overview of the rules
 
 <b>Rules</b>:
 There are 2 players. Each player gets to throw 4, 4 sided dice.
