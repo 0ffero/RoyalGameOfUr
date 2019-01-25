@@ -1,6 +1,7 @@
 So, heres my implementation of The Royal Game of Ur.
 
 <b>Reason</b>: I saw the game on youtube and thought "I bet I can make that in javascript"... so I did.
+
 <b>Dev and implementation</b>: Originally built for Firefox, but the animation system isnt as smooth "looking" as it is in
 Chrome. So, it will probably still work OK in firefox, but the pieces will probably be off as .width and .height will include
 or not include its margin and/or padding sizes dependant on browser.
