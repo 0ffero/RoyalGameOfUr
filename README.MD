@@ -3,9 +3,9 @@ So, heres my implementation of The Royal Game of Ur.
 <b>Reason</b>: I saw the game on youtube and thought "I bet I can make that in javascript"... so I did.
 
 <b>Dev and implementation</b>: Originally built for Firefox, but the animation system isnt as smooth "looking" as it is in
-Chrome. So, it will probably still work OK in firefox, but the pieces positions will be off a bit as .width and .height will
-include or not include its margin and/or padding sizes. This'll probably never be fixed as I only planned for me to play it,
-and Ill always just play it in Chrome :)
+Chrome. So, although it will work in firefox (with the pieces positions being off a bit as .width and .heightworks differently
+in different browsers. This'll probably never be fixed as I only planned for me to play it, and Ill always just play it in
+Chrome :)
 
 <b>Outcome</b>: Index.html and indexsound.html. No external images or sounds (as I base64 encoded them all). Uses Jquery.
 
@@ -49,3 +49,5 @@ again. Also, the pettle in the attack lane cannot be taken, so if someones one i
 Only one counter is allowed on each sqaure.
 
 You CAN throw a 0.
+
+Feel free to use the source code at will.
