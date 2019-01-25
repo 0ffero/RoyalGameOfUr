@@ -7,6 +7,7 @@ There are 2 players. Each player gets to throw 4, 4 sided dice.
 Each player has 7 counters which have to travel the board until it exists the board (on the right hand side).
 There are 3 lanes, 2 of which interact with each other.
 
+<pre>
 [1][1][1][1]   E[1][1]  <-- Player 1s entry lane
 <- <- <- <- 1   <- <-
 
@@ -16,6 +17,7 @@ There are 3 lanes, 2 of which interact with each other.
 
 [2][2][2][2]    E[2][2]  <-- Player 2s entry and exit lane
 <- <- <- <- 2    <- <-
+</pre>
 
 Player one enters the board at the top of the screen, player 2 enters the board at the opposite side (shown above as [E]).
 The path of the Player starts on their safe zones, the counters on these first 4 tiles cannot be taken by the other player.
