@@ -3,9 +3,8 @@ So, heres my implementation of The Royal Game of Ur.
 <b>Reason</b>: I saw the game on youtube and thought "I bet I can make that in javascript"... so I did.
 
 <b>Dev and implementation</b>: Originally built for Firefox, but the animation system isnt as smooth "looking" as it is in
-Chrome. So, although it will work in firefox (with the pieces positions being off a bit as .width and .heightworks differently
-in different browsers. This'll probably never be fixed as I only planned for me to play it, and Ill always just play it in
-Chrome :)
+Chrome. So, although it will work in firefox its meant to be played in Chrome. This'll probably never be fixed as I only
+planned for me to play it, and Ill always just play it in Chrome :)
 
 <b>Outcome</b>: Index.html and indexsound.html. No external images or sounds (as I base64 encoded them all). Uses Jquery.
 
@@ -18,7 +17,7 @@ Each player has 7 counters which have to travel the board until it exists the bo
 There are 3 lanes, 2 of which interact with each other.
 
 <pre>
-[1][1][1][1]S     E[1][1]  <-- Player 1s entry lane
+[1][1][1][1]S    E[1][1]  <-- Player 1s entry and exit lane
 <- <- <- <- 1      <- <-
 
 -> -> -> -> -> -> -> ->
