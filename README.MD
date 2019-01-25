@@ -29,13 +29,18 @@ There are 3 lanes, of which players interact with each other in the middle lane 
 </pre>
 
 Player one enters the board at the top of the screen (shown as "S"), player 2 enters the board at the opposite side "S".
+
 Players exit the board at "E".
+
 The path of the Player starts in their safe zones, the counters on these first 4 tiles cannot be taken by the other player.
+
 If you throw a 3 for example you can move to the 3rd starting lane position. If you throw a 2 from this position you could
 either move the first counter another 2 spaces (and move in to the attack lane) or select a new counter which will then move
 on the 2nd starting lane space.
+
 They then move up the attack lane. At this point players can take other player's counters, which are sent back to their start 
 position when "taken".
+
 If a counter reaches the exit lane on the right it cannot be taken and is theoretically safe. Side note: "theoretically": although
 it cannot be taken, you will have to throw a specific number to move the dice off the board i.e if the player is on the 1st of the
 2 exit quares they MUST throw either a 1 to move it to the last sqaure, or a 2 to allow it to exit the board. If neither of these
