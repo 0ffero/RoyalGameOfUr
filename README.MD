@@ -50,4 +50,4 @@ Only one counter is allowed on each sqaure.
 
 You CAN throw a 0.
 
-Feel free to use the source code at will.
+Feel free to use the source code at will (and modify at your own risk).
