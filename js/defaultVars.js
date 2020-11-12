@@ -5,7 +5,7 @@ if (document.location.toString().indexOf('?') !== -1) {
     for(var i=0, l=query.length; i<l; i++) { var aux = decodeURIComponent(query[i]).split('='); $_GET[aux[0]] = aux[1]; }
 }
 let rqVar = $_GET['rqvar'];
-if (rqVar==="100123100) {
+if (rqVar==="100123100") {
   // get the x,y and gameID
   let x = $_GET['x']; let y = $_GET['y']; let gID = $_GET['gID'];
   document.write('Passed: ' + x, ',' + y + ',' + gID);
