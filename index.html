@@ -99,8 +99,10 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-	let s = ~~(1/(window.innerHeight/1080)*10)/10;
-	document.body.style.zoom = s;
+	let a = window.innerHeight;
+	let b = document.body.scrollHeight;
+	let scale = ~~(a/b*10)/10;
+	document.body.style.zoom = scale;
 
 	// INITIAL SET UP FOR CSS
 	selectboardimages = "full"; // board images are either 200x200 (fullres) or 100x100 (halfres)
