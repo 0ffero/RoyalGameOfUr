@@ -5,6 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 <script type="text/javascript" src="js/jquery331.js"></script>
 <script type="text/javascript" src="js/functions.js" ></script>
+<script type="text/javascript" src="js/savegame.js" ></script>
 <style type="text/css">
 	body { background-color: black; }
 	body, div { font-size: 26px; color: white; font-family: Yanone Kaffeesatz, monospace; }
@@ -98,12 +99,14 @@
 	<div class="message">The Royal Game of Ur, also known as the Game of Twenty Squares or simply the Game of Ur, is a two-player strategy race board game that was first played in ancient Mesopotamia during the early third millennium BC. <a href="https://en.wikipedia.org/wiki/Royal_Game_of_Ur" target="_blank">more</a></div>
 </div>
 
-<div id="variables" data-currentplayer="1" data-playeronesquares='' data-playertwosquares='' data-hasdicebeenrolled="0"></div>
+<div id="variables" data-currentplayer="1" data-playeronesquares='' data-playertwosquares='' data-hasdicebeenrolled="0" data-movelist=''></div>
 <audio controls id="diceRollSnd" src="" />
 </body>
 
 <script type="text/javascript">
 $(document).ready(function(){
+	let s = ~~(1/(window.innerHeight/1080)*10)/10;
+	document.body.style.zoom = s;
 	console.log = function() {}
 	$.getScript("js/boardstuff.js");
 })

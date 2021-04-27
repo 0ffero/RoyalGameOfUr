@@ -4,7 +4,7 @@
 <script type="text/javascript" src="js/jquery331.js"></script>
 <script type="text/javascript" src="js/functions.js" ></script>
 <style type="text/css">
-	body { background-color: black; }
+	body { background-color: black; scale: 0.9 }
 	body, div { font-size: 26px; color: white; font-family: Yanone Kaffeesatz, monospace; }
 	#container, #piecesContainer { margin: 20px auto; margin-bottom: 0px; width: 1640px; background-color: black; padding: 20px; clear: left; height: 650px; }
 	#container { width: 1680px; }
@@ -99,6 +99,9 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
+	let s = ~~(1/(window.innerHeight/1080)*10)/10;
+	document.body.style.zoom = s;
+
 	// INITIAL SET UP FOR CSS
 	selectboardimages = "full"; // board images are either 200x200 (fullres) or 100x100 (halfres)
 	defaultstr = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA";
